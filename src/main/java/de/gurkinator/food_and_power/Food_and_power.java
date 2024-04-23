@@ -29,7 +29,7 @@ public final class Food_and_power extends JavaPlugin {
             //create recipe
             NamespacedKey key = new NamespacedKey(this, "berry_pie");
             ShapedRecipe recipe = new ShapedRecipe(key, item);
-            recipe.shape("E", "M", "B");
+            recipe.shape("   ", "EMB", "   ");
             recipe.setIngredient('E', Material.EGG);
             recipe.setIngredient('M', Material.MILK_BUCKET);
             recipe.setIngredient('B', Material.SWEET_BERRIES);
