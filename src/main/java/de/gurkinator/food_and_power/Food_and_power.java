@@ -5,7 +5,9 @@ import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.NamespacedKey;
 import org.bukkit.inventory.ItemStack;
+import org.bukkit.inventory.Recipe;
 import org.bukkit.inventory.ShapedRecipe;
+import org.bukkit.inventory.ShapelessRecipe;
 import org.bukkit.persistence.PersistentDataType;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -28,13 +30,13 @@ public final class Food_and_power extends JavaPlugin {
 
             //create recipe
             NamespacedKey key = new NamespacedKey(this, "berry_pie");
-            ShapedRecipe recipe = new ShapedRecipe(key, item);
-            recipe.shape("   ", "EMB", "   ");
-            recipe.setIngredient('E', Material.EGG);
-            recipe.setIngredient('M', Material.MILK_BUCKET);
-            recipe.setIngredient('B', Material.SWEET_BERRIES);
+            ShapelessRecipe recipe = new ShapelessRecipe(key, item);
+            recipe.addIngredient(Material.EGG);
+            recipe.addIngredient(Material.SUGAR);
+            recipe.addIngredient(Material.SWEET_BERRIES);
 
             Bukkit.addRecipe(recipe);
+
         }
 
     }
