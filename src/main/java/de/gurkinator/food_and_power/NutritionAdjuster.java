@@ -10,17 +10,17 @@ import org.bukkit.persistence.PersistentDataContainer;
 import org.bukkit.persistence.PersistentDataType;
 
 public class NutritionAdjuster implements Listener {
-    Food_and_power plugin;
-    public NutritionAdjuster(Food_and_power plugin) {
+    FoodAndPower plugin;
+    public NutritionAdjuster(FoodAndPower plugin) {
         this.plugin = plugin;
     }
     @EventHandler
     @SuppressWarnings({"DataFlowIssue"})
     public void onEatEvent(PlayerItemConsumeEvent event) {
         PersistentDataContainer pdc = event.getItem().getItemMeta().getPersistentDataContainer();
-        if (pdc.has(plugin.food_level_key)) {
+        if (pdc.has(plugin.foodLevelKey)) {
             event.setCancelled(true);
-            int level = pdc.get(plugin.food_level_key, PersistentDataType.INTEGER);
+            int level = pdc.get(plugin.foodLevelKey, PersistentDataType.INTEGER);
             Player p = event.getPlayer();
 
             //only decrement item if player is in survival/adventure
