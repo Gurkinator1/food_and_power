@@ -1,7 +1,7 @@
-package de.gurkinator.food_and_power;
+package de.gurkinator.foodandpower;
 
-import de.gurkinator.food_and_power.items.BerryPie;
-import de.gurkinator.food_and_power.items.FriedEgg;
+import de.gurkinator.foodandpower.items.BerryPie;
+import de.gurkinator.foodandpower.items.FriedEgg;
 import org.bukkit.Bukkit;
 import org.bukkit.NamespacedKey;
 import org.bukkit.plugin.java.JavaPlugin;

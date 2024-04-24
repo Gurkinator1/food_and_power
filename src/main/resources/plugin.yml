@@ -1,4 +1,4 @@
 name: food_and_power
 version: '${version}'
-main: de.gurkinator.food_and_power.Food_and_power
+main: de.gurkinator.foodandpower.FoodAndPower
 api-version: '1.20'

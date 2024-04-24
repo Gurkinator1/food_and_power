@@ -1,6 +1,6 @@
-package de.gurkinator.food_and_power.items;
+package de.gurkinator.foodandpower.items;
 
-import de.gurkinator.food_and_power.FoodItem;
+import de.gurkinator.foodandpower.FoodItem;
 import net.kyori.adventure.text.Component;
 import org.bukkit.Material;
 import org.bukkit.NamespacedKey;

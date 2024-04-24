@@ -1,4 +1,4 @@
-package de.gurkinator.food_and_power;
+package de.gurkinator.foodandpower;
 
 import org.bukkit.Keyed;
 import org.bukkit.Material;
