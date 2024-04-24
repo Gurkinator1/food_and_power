@@ -5,6 +5,7 @@
   },
   "overrides": [
     {"predicate": { "custom_model_data": 1}, "model": "custom_assets:item/berry_pie_model"},
-    {"predicate": { "custom_model_data": 2}, "model": "custom_assets:item/fried_egg_model"}
+    {"predicate": { "custom_model_data": 2}, "model": "custom_assets:item/fried_egg_model"},
+    {"predicate": { "custom_model_data": 3}, "model": "custom_assets:item/cherry_model"},
   ]
 }
